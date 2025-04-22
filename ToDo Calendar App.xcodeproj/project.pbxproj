@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F616873C2DB6712300D76DFB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F616873B2DB6712300D76DFB /* RxSwift */; };
+		F616873E2DB6719400D76DFB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F616873D2DB6719400D76DFB /* RxCocoa */; };
+		F6E287662DB6268300005DC2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6E287652DB6268300005DC2 /* SnapKit */; };
+		F6E2876D2DB62ADA00005DC2 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6E2876C2DB62ADA00005DC2 /* ReSwift */; };
+		F6E287732DB62B3B00005DC2 /* data in Frameworks */ = {isa = PBXBuildFile; productRef = F6E287722DB62B3B00005DC2 /* data */; };
+		F6E287752DB62B3D00005DC2 /* domain in Frameworks */ = {isa = PBXBuildFile; productRef = F6E287742DB62B3D00005DC2 /* domain */; };
+		F6E287772DB62B4000005DC2 /* infrastructure in Frameworks */ = {isa = PBXBuildFile; productRef = F6E287762DB62B4000005DC2 /* infrastructure */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F6E284C52DB61ED700005DC2 /* ToDo Calendar App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo Calendar App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -29,6 +39,11 @@
 			path = "ToDo Calendar App";
 			sourceTree = "<group>";
 		};
+		F6E284DE2DB6200000005DC2 /* Modules */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F616873C2DB6712300D76DFB /* RxSwift in Frameworks */,
+				F6E287772DB62B4000005DC2 /* infrastructure in Frameworks */,
+				F6E287662DB6268300005DC2 /* SnapKit in Frameworks */,
+				F616873E2DB6719400D76DFB /* RxCocoa in Frameworks */,
+				F6E287732DB62B3B00005DC2 /* data in Frameworks */,
+				F6E287752DB62B3D00005DC2 /* domain in Frameworks */,
+				F6E2876D2DB62ADA00005DC2 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +67,9 @@
 		F6E284BC2DB61ED700005DC2 = {
 			isa = PBXGroup;
 			children = (
+				F6E284DE2DB6200000005DC2 /* Modules */,
 				F6E284C72DB61ED700005DC2 /* ToDo Calendar App */,
+				F6E287712DB62B3B00005DC2 /* Frameworks */,
 				F6E284C62DB61ED700005DC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +80,13 @@
 				F6E284C52DB61ED700005DC2 /* ToDo Calendar App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E287712DB62B3B00005DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,9 +106,17 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F6E284C72DB61ED700005DC2 /* ToDo Calendar App */,
+				F6E284DE2DB6200000005DC2 /* Modules */,
 			);
 			name = "ToDo Calendar App";
 			packageProductDependencies = (
+				F6E287652DB6268300005DC2 /* SnapKit */,
+				F6E2876C2DB62ADA00005DC2 /* ReSwift */,
+				F6E287722DB62B3B00005DC2 /* data */,
+				F6E287742DB62B3D00005DC2 /* domain */,
+				F6E287762DB62B4000005DC2 /* infrastructure */,
+				F616873B2DB6712300D76DFB /* RxSwift */,
+				F616873D2DB6719400D76DFB /* RxCocoa */,
 			);
 			productName = "ToDo Calendar App";
 			productReference = F6E284C52DB61ED700005DC2 /* ToDo Calendar App.app */;
@@ -107,6 +146,11 @@
 			);
 			mainGroup = F6E284BC2DB61ED700005DC2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6E287642DB6268300005DC2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F6E2876B2DB62ADA00005DC2 /* XCRemoteSwiftPackageReference "ReSwift" */,
+				F616873A2DB6712300D76DFB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6E284C62DB61ED700005DC2 /* Products */;
 			projectDirPath = "";
@@ -150,9 +194,10 @@
 				INFOPLIST_FILE = "ToDo Calendar App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -160,6 +205,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deinerjohn.ToDo-Calendar-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -178,9 +227,10 @@
 				INFOPLIST_FILE = "ToDo Calendar App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +238,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deinerjohn.ToDo-Calendar-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,6 +389,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F616873A2DB6712300D76DFB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		F6E287642DB6268300005DC2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		F6E2876B2DB62ADA00005DC2 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F616873B2DB6712300D76DFB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F616873A2DB6712300D76DFB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F616873D2DB6719400D76DFB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F616873A2DB6712300D76DFB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F6E287652DB6268300005DC2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6E287642DB6268300005DC2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F6E2876C2DB62ADA00005DC2 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6E2876B2DB62ADA00005DC2 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		F6E287722DB62B3B00005DC2 /* data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = data;
+		};
+		F6E287742DB62B3D00005DC2 /* domain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = domain;
+		};
+		F6E287762DB62B4000005DC2 /* infrastructure */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = infrastructure;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6E284BD2DB61ED700005DC2 /* Project object */;
 }
