@@ -32,3 +32,7 @@ Clean Architecture structured by:
 | MVVM-C Pattern                  | MVVM + Coordinator   | `AppCoordinator`                    |
 | Calendar Integration            | UICalendarView             | `CalendarViewController`, `EventStoreManager`            |
 | Text Input Error UI             | Custom View          | `TextFieldError`                                         |
+
+
+## Demo App
+![](ToDo%20Calendar%20App/Assets.xcassets/gif1.dataset/gif1.gif) ![](ToDo%20Calendar%20App/Assets.xcassets/gif2.dataset/gif2.gif) ![](ToDo%20Calendar%20App/Assets.xcassets/gif3.dataset/gif3.gif) ![](ToDo%20Calendar%20App/Assets.xcassets/gif4.dataset/gif4.gif)
